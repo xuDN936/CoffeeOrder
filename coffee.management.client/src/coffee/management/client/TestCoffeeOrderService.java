@@ -30,7 +30,7 @@ public class TestCoffeeOrderService {
     public static void main(String[] args) {
         // Test Creating Coffee Order
         CoffeeOrder espressoOrder = new CoffeeOrder();
-        espressoOrder.setCoffeeName("Cappuccino");
+        espressoOrder.setCoffeeName("espresso");
         espressoOrder.setPrice(2.5);
         espressoOrder.setQuantity(1);
 
