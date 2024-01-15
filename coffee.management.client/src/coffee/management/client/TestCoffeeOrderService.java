@@ -13,12 +13,20 @@ import org.apache.cxf.jaxrs.client.WebClient;
 
 import coffee.management.web.data.CoffeeOrder;
 
+/**
+ * This class provides a simple client to test the Coffee Order Service and an external REST service.
+ */
 public class TestCoffeeOrderService {
 
     private static String webServiceUrl = "http://localhost:8080/coffee.management.web/api/coffee-orders";
     private static String externalRestServiceUrl = "http://www.omdbapi.com/?i=tt3896198&apikey=b2f60904";
     private static String rapidApiKey = "b2f60904";
 
+    /**
+     * Main method to run tests on the Coffee Order Service and an external REST service.
+     *
+     * @param args Command-line arguments (not used in this application).
+     */
     public static void main(String[] args) {
         // Test Creating Coffee Order
         CoffeeOrder espressoOrder = new CoffeeOrder();
@@ -35,6 +43,11 @@ public class TestCoffeeOrderService {
         testExternalRestService();
     }
 
+    /**
+     * Creates a Coffee Order using the Coffee Order Service.
+     *
+     * @param coffeeOrder The Coffee Order to be created.
+     */
     private static void createCoffeeOrder(CoffeeOrder coffeeOrder) {
         System.out.println("Creating Coffee Order...");
 
@@ -58,6 +71,11 @@ public class TestCoffeeOrderService {
         }
     }
 
+    /**
+     * Deletes a Coffee Order using the Coffee Order Service.
+     *
+     * @param orderId The ID of the Coffee Order to be deleted.
+     */
     private static void deleteCoffeeOrder(int orderId) {
         System.out.println("Deleting Coffee Order...");
 
@@ -78,6 +96,9 @@ public class TestCoffeeOrderService {
         }
     }
 
+    /**
+     * Tests an external REST service using HTTP GET request.
+     */
     private static void testExternalRestService() {
         System.out.println("Testing External REST Service...");
 
