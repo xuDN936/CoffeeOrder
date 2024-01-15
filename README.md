@@ -1,7 +1,7 @@
 # Noms et e-mails des membres degroupe：
 ### name：徐丹妮 Alix      student-ID:1201024036   github-name：xuDN936    email：2879774048@qq.com; 
 ### name：毛湘   Véronica  student-ID:1201024037   github-name：MaoXiang1  email：783175542@qq.com;
-
+### name：干敏敏 Julie     student-ID:1201024039   github-name：MIN-BEILU  email: 2632599440@qq.com;
 
 # Système de Gestion du Café
 
